@@ -1,0 +1,17 @@
+:root {
+    background: #292929;
+    color: #e1e0d5e5;
+    font-family: sans-serif;
+}
+
+body {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 0 10px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
