@@ -1,17 +1,71 @@
 :root {
-    background: #292929;
-    color: #e1e0d5e5;
-    font-family: sans-serif;
+    --bg: #111;
+    --card: #1c1c1c;
+    --text: #fff;
+    --subtext: #aaa;
 }
 
 body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+.container {
     max-width: 650px;
     margin: 40px auto;
-    padding: 0 10px;
-    line-height: 1.6;
-    font-size: 18px;
+    padding: 0px 20px;
+    min-height: 100vh;
 }
 
-h1, h2, h3 {
-    line-height: 1.2;
+/* Navbar */
+.navbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--text);
+    padding: 8px 14px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    background: var(--card);
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    background: var(--text);
+    color: var(--bg);
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+}
+
+/* Hero */
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    color: var(--subtext);
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: var(--subtext);
 }
